@@ -12,19 +12,61 @@ body {
   padding-left: 100px;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 }
 
 .header {
   background: #EFEFEF;
-  padding: 10px;
-  margin: 0;
+  height: 60px;
 }
 
 .header-text{
-  font-size: 25px;
-  line-height: 35px;
+  
+  float:left;
 }
 
+.header-text>a{
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.header-menu{
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style: none;
+  font-size: 14px;
+  float:left;
+}
+
+.header-menu>li{
+  float: left;
+  font-size: 14px;
+  line-height: 60px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.header-link{
+  text-decoration: none;
+  color: #3366CC;
+}
+.header-link:visited{
+  color:#3366CC;
+}
+
+.active{
+  background: #D4D4D4;
+}
+
+.link{
+  text-decoration: none;
+  color: #3366CC;
+}
+.link:visited{
+  color:red;
+}
+
+/* Old styling - still used in the blogs*/
 h1{
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +92,7 @@ p {
 
 }
 
-li{
+.list-menu{
   background: white;
   margin-right: 20px;
   margin-left: 20px;
@@ -64,10 +106,4 @@ li{
 
 }
 
-.link{
-  text-decoration: none;
-  color: #3366CC;
-}
-.link:visited{
-  color:red;
-}
+
