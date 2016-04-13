@@ -50,6 +50,37 @@ body {
   text-decoration: none;
   color: #3366CC;
 }
+
+.header li:hover .sub-menu{
+  z-index: 1;
+  opacity: 1;
+}
+
+.sub-menu{
+  width:160%;
+  padding:5px 0px;
+  /* position:absolute; */
+  /* top:100%; */
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  background: #D4D4D4;
+}
+
+.sub-menu li{
+  display:block;
+
+}
+
+.sub-menu li a {
+  padding: 10px 30px;
+  display: block;
+}
+
+
+
+
+
 .header-link:visited{
   color:#3366CC;
 }
