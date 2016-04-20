@@ -1,0 +1,38 @@
+
+.header-bar{
+  background: #6FD6E4;
+  padding-top: 15px;
+}
+
+.header-text{
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 2px 2px #A33448;
+  font-weight: bolder;
+  color: #FF7A00;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.header-sub-text{
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.nav-bar{
+  background: #63EA2A;
+}
+
+.side-bar{
+  background: #CA6174;
+  height: 100%;
+  min-height: 700px;
+}
+
+.main-window{
+  background: #FFB979;
+}
+
+.footer{
+  text-align: center;
+}
