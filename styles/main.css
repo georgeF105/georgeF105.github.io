@@ -29,6 +29,24 @@
   
 }
 
+.side-bar-menu-1{
+  list-style: none;
+  margin: 5px;
+  padding:10px;
+  
+}
+
+.side-bar-menu-1>li{
+  /* display: inline; */
+}
+
+.side-bar-menu-2{
+  list-style: none;
+  /* opacity: 0; */
+  /* z-index: -1; */
+
+}
+
 .main-window{
   background: #FFB979;
 }
@@ -41,5 +59,6 @@
 @media (min-width: 550px){
   .side-bar{
     min-height: 700px;
+    padding-top: 15px;
   }
 }
