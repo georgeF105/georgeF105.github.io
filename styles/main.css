@@ -26,7 +26,7 @@
 .side-bar{
   background: #CA6174;
   height: 100%;
-  min-height: 700px;
+  
 }
 
 .main-window{
@@ -35,4 +35,11 @@
 
 .footer{
   text-align: center;
+}
+
+/*Bigger than 550px*/
+@media (min-width: 550px){
+  .side-bar{
+    min-height: 700px;
+  }
 }
