@@ -23,7 +23,13 @@ body{
   margin-left: 10px;
   color: #767B7C;
 }
-
+.header-sub-text>a{
+  text-decoration: none;
+  color: #767B7C;
+}
+.header-sub-text>a:hover{
+  text-shadow: 1px 1px #1A1A1A;
+}
 .nav-bar{
   background: #63EA2A;
 }
