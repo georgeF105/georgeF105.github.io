@@ -34,6 +34,11 @@ var blogLinks = {
       "title":"JavaScript Language",
       "url":"blog/t6-js-language.html",
       "created":"2016-05-14"
+    },
+    "t8-testing":{
+      "title":"Scope",
+      "url":"blog/t8-testing.html",
+      "created":"2016-05-26"
     }
   },
   "cultural":{
