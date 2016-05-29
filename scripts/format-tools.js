@@ -81,6 +81,11 @@ var blogLinks = {
       "title":"Motivation",
       "url":"blog/c7-motivation.html",
       "created":"2016-05-22"
+    },
+    "c8_connecting":{
+      "title":"Connecting",
+      "url":"blog/c8-connecting.html",
+      "created":"2016-05-29"
     }
   },
   "projects":{
