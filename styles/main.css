@@ -127,6 +127,9 @@ body{
   height: 100%;
   overflow-y:scroll;
 }
+.menu>a{
+  color: inherit;
+}
 
 .menu-item{
   border: solid 2px #494949;

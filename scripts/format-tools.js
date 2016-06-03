@@ -100,6 +100,12 @@ var blogLinks = {
     "url":"blog/c8-connecting.html",
     "created":"2016-05-29"
   },
+  "c9_leadership":{
+    "type":"cultural",
+    "title":"Leadership",
+    "url":"blog/c9-leadership.html",
+    "created":"2016-06-03"
+  },
   "javascript_racer":{
     "type":"project",
     "title":"Racer Game",
@@ -125,14 +131,14 @@ function addLinks(){
 }
 //addLinks();
 
-var menuItemTemplate = '<div class="menu-item" id="menu-item-%id%"><div class="menu-item-type">%type%</div><div class="menu-item-date">%date%</div><div class="menu-item-title">%title%</div></div>';
+var menuItemTemplate = '<a href="#%id%"><div class="menu-item" id="menu-item-%id%"><div class="menu-item-type">%type%</div><div class="menu-item-date">%date%</div><div class="menu-item-title">%title%</div></div></a>';
 
 function buildMenu(sortBy){
   sortBy = sortBy || "none";
   //console.log("buildMenu sortBy: " + sortBy);
   for(var key in blogLinks){
     //console.log(key)
-    $("#menuItems").append(menuItemTemplate.replace("%type%",blogLinks[key].type.charAt(0).toUpperCase() + blogLinks[key].type.slice(1)).replace("%date%",blogLinks[key].created).replace("%title%",blogLinks[key].title).replace("%id%",key));
+    $("#menuItems").append(menuItemTemplate.replace("%type%",blogLinks[key].type.charAt(0).toUpperCase() + blogLinks[key].type.slice(1)).replace("%date%",blogLinks[key].created).replace("%title%",blogLinks[key].title).replace(/%id%/g,key));
     // $("#menu-item-"+key).click(function(key){buildContent(key);});
     $("#menu-item-"+key).click({key:key}, buildContent);
   }
@@ -141,12 +147,20 @@ function buildMenu(sortBy){
 buildMenu();
 
 function buildContent(event){
-  console.log("buildContent: "+event.data.key);
+  console.log(typeof(event));
+  var idKey;
+  if(typeof(event) == 'object'){
+    idKey = event.data.key;
+  }
+  else{
+    idKey = event;
+  }
+  console.log("buildContent: "+idKey);
   //console.log("url: " + )
   // $("#linkContent").load(blogLinks[event.data.key].url + " div#actualContent");
 
   $.ajax({
-    url:blogLinks[event.data.key].url,
+    url:blogLinks[idKey].url,
     type:'GET',
     success: function(data){
       $("#linkContent").html($(data).filter("#actualContent").html() || $(data).find("#actualContent").html() );
@@ -154,5 +168,13 @@ function buildContent(event){
       //console.log(data);
     }
   });
-
 }
+
+function loadAnchorTag(){
+  console.log
+  if(window.location.href.split('#')[1] != undefined){
+    // buildContent({key:window.location.href.split('#')[1]});
+    buildContent(window.location.href.split('#')[1]);
+  }
+}
+loadAnchorTag();
