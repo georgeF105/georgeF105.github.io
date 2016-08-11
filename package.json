@@ -1,0 +1,30 @@
+{
+  "name": "georgef105.github.io",
+  "version": "1.0.0",
+  "description": "My homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgeF105/georgeF105.github.io.git"
+  },
+  "author": "georgef105",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgeF105/georgeF105.github.io/issues"
+  },
+  "homepage": "https://github.com/georgeF105/georgeF105.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react": "^15.3.0"
+  }
+}
