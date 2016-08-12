@@ -6,7 +6,7 @@ export default (props) => {
       <div className='container'>
         <h1>George Francis</h1>
       </div>
-      <hr/>
+      <hr />
     </div>
   )
 }

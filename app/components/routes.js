@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 import App from './App'
-import Projects from './Projects'
+import Projects from './containers/ProjectsContainer'
 import Home from './Home'
 
 export default (
