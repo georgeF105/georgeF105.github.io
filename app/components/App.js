@@ -1,23 +1,13 @@
-import React, { Component } from 'react'
-
+import React from 'react'
 import Header from './Header'
-import Projects from './Projects'
 
-class App extends Component {
-
-  constructor (props) {
-    super(props)
-  }
-
+export default React.createClass({
   render () {
     return (
-      <main>
+      <div>
         <Header />
-        <Projects />
-      </main>
+        {this.props.children}
+      </div>
     )
   }
-
-}
-
-export default App
+})

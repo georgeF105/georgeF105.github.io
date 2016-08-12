@@ -1,7 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './app/components/App'
+
+import routes from './app/components/routes'
 
 render((
-  <App />
+  <div id='main'>
+    { routes }
+  </div>
   ), document.getElementById('app'))
