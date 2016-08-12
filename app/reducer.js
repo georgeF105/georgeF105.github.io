@@ -2,8 +2,11 @@ import { fromJS } from 'immutable'
 
 const INITAL_STATE = fromJS({
   projects: [
-    {name: 'test project 1'},
-    {name: 'test project 2'}
+    {name: 'test project 1', description: 'words words words words words words'},
+    {name: 'test project 2', description: 'words words words words words words'},
+    {name: 'test project 3', description: 'words words words words words words'},
+    {name: 'test project 4', description: 'words words words words words words'},
+    {name: 'test project 5', description: 'words words words words words words'}
   ]
 })
 

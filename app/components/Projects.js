@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ProjectCard from './ProjectCard'
+
 export default (props) => {
   console.log('props', props)
   const projects = props.projects
@@ -8,7 +10,7 @@ export default (props) => {
     <div className='container content projects'>
       <h3>Projects</h3>
       {projects
-        ? projects.map((project, key) => <h4 key={key}>Project Name: {project.name}</h4>)
+        ? projects.map((project, key) => <ProjectCard key={key} project={project} />)
         : <h4>No Projects Found</h4>
       }
     </div>
