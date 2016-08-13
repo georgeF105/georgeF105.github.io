@@ -18,6 +18,6 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const ProjectsContainer = connect(mapStateToProps,mapDispatchToProps)(Projects)
+const ProjectsContainer = connect(mapStateToProps, mapDispatchToProps)(Projects)
 
 export default ProjectsContainer
