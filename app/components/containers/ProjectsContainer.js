@@ -5,7 +5,8 @@ import Projects from '../Projects'
 
 const mapStateToProps = (state) => {
   return {
-    projects: state.get('projects').toJS()
+    projects: state.get('projects').toJS(),
+    fetchingProjects: state.get('fetchingProjects')
   }
 }
 
