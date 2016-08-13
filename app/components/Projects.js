@@ -12,8 +12,7 @@ class Projects extends React.Component {
     const projects = this.props.projects
     const isFetching = this.props.fetchingProjects
     return (
-      <div className='container content projects'>
-        <h3>Projects</h3>
+      <div className='container projects'>
         {isFetching
           ? <h4>Loading... from firebase</h4>
           : projects.length
