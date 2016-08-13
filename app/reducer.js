@@ -1,13 +1,8 @@
 import { fromJS } from 'immutable'
 
 const INITAL_STATE = fromJS({
-  projects: [
-    {name: 'test project 1', description: 'words words words words words words'},
-    {name: 'test project 2', description: 'words words words words words words'},
-    {name: 'test project 3', description: 'words words words words words words'},
-    {name: 'test project 4', description: 'words words words words words words'},
-    {name: 'test project 5', description: 'words words words words words words'}
-  ]
+  projects: [],
+  fetchingProjects: false
 })
 
 export default (state = INITAL_STATE, action) => {
@@ -17,7 +12,7 @@ export default (state = INITAL_STATE, action) => {
       return state
     case 'RECEIVE_PROJECTS':
       console.log('RECEIVE_PROJECTS', action.list)
-      return state
+      return state.set('projects', fromJS(action.list))
     case 'ERROR':
       console.log('ERROR', action.list)
       return state

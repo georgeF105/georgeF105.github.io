@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 
+import { fetchProjects } from '../../actions'
 import Projects from '../Projects'
 
 const mapStateToProps = (state) => {
@@ -8,6 +9,14 @@ const mapStateToProps = (state) => {
   }
 }
 
-const ProjectsContainer = connect(mapStateToProps)(Projects)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchProjects: () => {
+      dispatch(fetchProjects())
+    }
+  }
+}
+
+const ProjectsContainer = connect(mapStateToProps,mapDispatchToProps)(Projects)
 
 export default ProjectsContainer
