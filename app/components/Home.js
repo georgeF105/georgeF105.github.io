@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 export default (props) => {
   return (
     <div className='container content home'>
-      <Link to='/projects'>Projects</Link>
+      <h2>Homepage</h2>
     </div>
   )
 }
