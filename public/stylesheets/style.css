@@ -75,6 +75,7 @@ hr {
 }
 
 .resume-pdf {
+  margin-top: 5px;
   width: 100%;
   height: calc(100vh - 110px);
 }
