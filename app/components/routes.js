@@ -4,7 +4,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import App from './App'
 import Projects from './containers/ProjectsContainer'
 import Home from './Home'
-import About from './About'
+import Resume from './Resume'
 import Contact from './Contact'
 
 export default (
@@ -12,7 +12,7 @@ export default (
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
       <Route path='/projects' component={Projects} />
-      <Route path='/about' component={About} />
+      <Route path='/resume' component={Resume} />
       <Route path='/contact' component={Contact} />
     </Route>
   </Router>

@@ -9,7 +9,7 @@ export default (props) => {
           <h1 className='title'>George Francis</h1>
         </div>
         <div className='header-links'>
-          <Link to='/about' activeClassName='active-link'>About</Link>
+          <Link to='/resume' activeClassName='active-link'>Resume</Link>
           <Link to='/projects' activeClassName='active-link'>Projects</Link>
           <Link to='/contact' activeClassName='active-link'>Contact</Link>
         </div>
