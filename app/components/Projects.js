@@ -14,7 +14,7 @@ class Projects extends React.Component {
     return (
       <div className='container projects'>
         {isFetching
-          ? <h4>Loading... from firebase</h4>
+          ? <h4>Loading from firebase...</h4>
           : projects.length
           ? projects.map((project, key) => <ProjectCard key={key} project={project} />)
           : <h4>No Projects Found</h4>
